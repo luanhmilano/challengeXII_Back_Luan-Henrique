@@ -18,3 +18,10 @@ model Driver {
   isOwn          Boolean  @default(true)
   carType        String
 }
+
+model Cars {
+  id             Int      @id @default(autoincrement())
+  title          String
+  description    String
+  image          String
+}

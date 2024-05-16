@@ -15,7 +15,6 @@ model Driver {
   country        String
   city           String
   referralCode   String
-  isOwn          Boolean  @default(true)
   carType        String
 }
 

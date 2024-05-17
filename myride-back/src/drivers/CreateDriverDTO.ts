@@ -1,24 +1,24 @@
-import { IsEmail, IsEmpty, IsNotEmpty, IsString } from 'class-validator';
+import { IsEmail, IsNotEmpty } from 'class-validator';
 
 export class CreateDriverDTO {
-  @IsString()
+  @IsNotEmpty()
   firstName: string;
 
-  @IsString()
+  @IsNotEmpty()
   lastName: string;
 
   @IsEmail()
   email: string;
 
-  @IsString()
+  @IsNotEmpty()
   country: string;
 
   @IsNotEmpty()
   city: string;
 
-  @IsEmpty()
+  @IsNotEmpty()
   referralCode: string;
 
-  @IsEmpty()
+  @IsNotEmpty()
   carType: string;
 }

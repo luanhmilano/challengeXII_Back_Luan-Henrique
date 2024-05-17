@@ -1,5 +1,12 @@
-import { Controller, Post, Body } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  Body,
+  UsePipes,
+  ValidationPipe,
+} from '@nestjs/common';
 import { DriversService } from './drivers.service';
+import { CreateDriverDTO } from './CreateDriverDTO';
 
 import { Driver as DriverModel } from '@prisma/client';
 
@@ -8,18 +15,10 @@ export class DriversController {
   constructor(private readonly driverService: DriversService) {}
 
   @Post('driver')
+  @UsePipes(new ValidationPipe({ transform: true }))
   async newDriver(
-    @Body()
-    driverData: {
-      firstName: string;
-      lastName: string;
-      email: string;
-      country: string;
-      city: string;
-      referralCode: string;
-      carType: string;
-    },
+    @Body() createDriverDTO: CreateDriverDTO,
   ): Promise<DriverModel> {
-    return this.driverService.createDriver(driverData);
+    return this.driverService.createDriver(createDriverDTO);
   }
 }

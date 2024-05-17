@@ -9,4 +9,4 @@ import { PrismaService } from 'src/prisma.service';
   controllers: [DriversController],
   providers: [DriversService, PrismaService],
 })
-export class CarsModule {}
+export class DriverModule {}

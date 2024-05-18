@@ -1,54 +1,73 @@
-# Challenge Semana XII - Compass UOL
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-Repositório Backend do 3° Desafio do Programa de Bolsas Fullstack da Compass UOL.
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-## Descrição
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-Recebe os dados da criação de um novo motorista vindo do Frontend, faz as validações necessárias e adiciona no banco de dados. Também popula a tabela de carros assim que o projeto é inicializado, as informações serão consumidas no Frontend (seção 2).
+## Description
 
-## Iniciando
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-### Configuração do arquivo ".env"
-
-Crie um arquivo .env no projeto substituindo os placeholders adequadamente, é a configuração para o uso do banco de dados.
+## Installation
 
 ```bash
-  DATABASE_URL="mysql://[USER]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]"
+$ npm install
 ```
 
-### Instalação e Execução
+## Running the app
 
-<ul>
-  <li>Clone o repositório.</li>
-  <li>Acesse por uma IDE, entre no diretório com o comando: </li>
+```bash
+# development
+$ npm run start
 
-  ```bash
-    $ cd myride-back
-  ```
+# watch mode
+$ npm run start:dev
 
-  <li>Use a CLI para instalar as dependências com o comando: </li>
+# production mode
+$ npm run start:prod
+```
 
-  ```bash
-    $ npm install
-  ```
+## Test
 
-  <li>Inicialize o projeto com o comando: </li>
+```bash
+# unit tests
+$ npm run test
 
-  ```bash
-    $ npm start
-  ```
-</ul>
+# e2e tests
+$ npm run test:e2e
 
-Com isso a aplicação já estará rodando, pronta para receber as informações do Frontend.
+# test coverage
+$ npm run test:cov
+```
 
-## Tecnologias utilizadas
+## Support
 
-<ul>
-  <li> <a href="https://nodejs.org/en" target="_blank">Node.js</a> - Interpretador de JavaScript/TypeScript </li>
-  <li> <a href="https://www.npmjs.com/" target="_blank">npm</a> - Gerenciador de pacotes </li>
-  <li> <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> - Linguagem utilizada </li>
-  <li> <a href="https://docs.nestjs.com/" target="_blank">NestJS</a> - Framework utilizado </li>
-  <li> <a href="https://www.prisma.io/" target="_blank">Prisma</a> - ORM </li>
-  <li> <a href="https://www.mysql.com/" target="_blank">MySQL</a> - rodando na AWS RDS </li>
-  <li> <a href="https://github.com/typestack/class-validator" target="_blank">class validator</a> - Validações </li>
-</ul>
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](LICENSE).

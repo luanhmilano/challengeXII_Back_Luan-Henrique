@@ -10,10 +10,10 @@ Recebe os dados da criação de um novo motorista vindo do Frontend, faz as vali
 
 ### Configuração do arquivo ".env"
 
-Crie um arquivo .env no projeto substituindo os placeholders adequadamente, é a configuração para o uso do banco de dados.
+Crie um arquivo .env no projeto com a seguinte configuração para o uso do banco de dados.
 
 ```bash
-  DATABASE_URL="mysql://[USER]:[PASSWORD]@[HOST]:[PORT]/[DATABASE]"
+  DATABASE_URL="mysql://admin:wasabi30@desafioxii-luan.c3cw6w2iu4x7.us-east-1.rds.amazonaws.com:3306/desafioxii-luan"
 ```
 
 ### Instalação e Execução
